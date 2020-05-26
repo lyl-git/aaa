@@ -1,0 +1,55 @@
+/* pages/movie/movie.wxss */
+.title{
+  padding: 20rpx;
+  color:#ccc;
+}
+.movie-list{
+  padding: 0 20rpx;
+}
+.movie-list .movie-img{
+  width: 120rpx;
+  height: 180rpx;
+  flex: 0 0 140rpx;
+  margin-right: 20rpx;
+}
+.movie-list .list-item .nav-layout{
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.movie-list .list-item .layout-left{
+  flex: 1;
+  display: flex;
+}
+.movie-list .list-item .layout-left{
+  flex: 50rpx;
+}
+.right-content .movie-name{
+  width: 380rpx;
+  height: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.right-content .movie-lang{
+  width: 380rpx;
+  height: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  color:#ccc;
+}
+.right-content .movie-header{
+  width: 380rpx;
+  height: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color:#ccc;
+}
+.layout-right{
+  color:rgb(243, 139, 139);
+  font-size: 40rpx;
+}

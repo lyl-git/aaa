@@ -1,0 +1,25 @@
+/* pages/detail/detail.wxss */
+
+.box {
+  padding: 0 55rpx
+}
+.head{
+  text-align: center;
+}
+.director{
+  margin: 60rpx 0;
+  color:#ccc;
+  font-size: 28px;
+  font-size: 24rpx;
+}
+.introduce {
+  text-align: left;
+}
+
+.introduce .title {
+  font-size: 36rpx;
+}
+
+.introduce .content {
+  font-size: 28rpx;
+}

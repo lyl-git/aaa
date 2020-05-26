@@ -1,0 +1,18 @@
+<!--pages/movie/movie.wxml-->
+<view class="title">{{title}}</view>
+<!-- 列表 -->
+<view class="movie-list">
+  <view class="list-item" wx:for="{{list}}" wx:key="*this">
+    <navigator class="nav-layout" url="/pages/detail/detail?id={{item.id}}" hover-class="navigator-hover">
+      <view class="layout-left">
+        <image class="movie-img" src="{{item.images.small}}"></image>
+        <view class="right-content">
+          <view class="movie-name">{{item.title}}</view>
+          <view class="movie-lang">{{item.original_title}}</view>
+          <view class="movie-header">导演：{{item.directors[0].name}}</view>
+        </view>
+      </view>
+      <text class="layout-right">{{item.rating.average}}</text>
+    </navigator>
+  </view>
+</view>

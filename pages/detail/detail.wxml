@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<!-- 大图 -->
+<view class="box">
+  <view class="head">
+    <image class="poster" src="{{detailData.images.medium}}"></image>
+    <view class="subheading">{{detailData.title}}</view>
+  </view>
+  <view class="director">
+    <view>评分： {{detailData.rating.average}}</view>
+    <view>导演： {{detailData.directors[0].name}}</view>
+    <view>主演：
+      <text wx:for="{{detailData.casts}}"> {{item.name}}</text>
+    </view>
+  </view>
+  <view class="introduce">
+    <view class="title">简介：</view>
+    <view class="content">{{detailData.summary}}</view>
+  </view>
+
+</view>

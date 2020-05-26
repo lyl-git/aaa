@@ -1,0 +1,31 @@
+<!--pages/index/index.wxml-->
+<view>
+  <!-- 轮播 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper-item" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- //标题 -->
+  <view class="title">
+    <view class="headline">豆瓣电影</view>
+    <view class="subheading">
+      <text>源码出品</text>
+      <text>必属精品</text> </view>
+  </view>
+  <!-- 导航列表 -->
+  <view class="nav-list">
+    <view class="list-item" wx:for='{{navList}}' wx:key='*this'>
+      <navigator url="/pages/movie/movie?reqPath={{item.reqPath}}" hover-class="navigator-hover">
+        <view class="layout">
+          <text>{{item.name}}</text>
+          <text>></text>
+        </view>
+      </navigator>
+    </view>
+
+
+  </view>
+</view>
